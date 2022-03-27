@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>960</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="ProductCard" name="card1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>200</width>
+      <height>220</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ProductCard" name="card2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>30</y>
+      <width>200</width>
+      <height>220</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ProductCard" name="card3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>200</width>
+      <height>220</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ProductCard" name="card4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>270</y>
+      <width>200</width>
+      <height>220</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ProductCard" name="card5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>510</y>
+      <width>200</width>
+      <height>220</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="ProductCard" name="card6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>510</y>
+      <width>200</width>
+      <height>220</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="LoginWindow" name="loginWindow" native="true">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>0</y>
+      <width>640</width>
+      <height>960</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="debugbox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>521</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Customer ID : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="customerIdBox">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="RecommendationWindow" name="recommendationWindow" native="true">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>0</y>
+      <width>640</width>
+      <height>960</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="OrderList" name="orderList" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>750</y>
+      <width>581</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="checkoutButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>820</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Checkout</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearCartButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>860</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <zorder>card1</zorder>
+   <zorder>card2</zorder>
+   <zorder>card3</zorder>
+   <zorder>card4</zorder>
+   <zorder>card5</zorder>
+   <zorder>card6</zorder>
+   <zorder>debugbox</zorder>
+   <zorder>text_1</zorder>
+   <zorder>customerIdBox</zorder>
+   <zorder>recommendationWindow</zorder>
+   <zorder>loginWindow</zorder>
+   <zorder>orderList</zorder>
+   <zorder>checkoutButton</zorder>
+   <zorder>clearCartButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ProductCard</class>
+   <extends>QWidget</extends>
+   <header>productcard.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LoginWindow</class>
+   <extends>QWidget</extends>
+   <header>loginwindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RecommendationWindow</class>
+   <extends>QWidget</extends>
+   <header>recommendationwindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OrderList</class>
+   <extends>QWidget</extends>
+   <header>orderlist.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
